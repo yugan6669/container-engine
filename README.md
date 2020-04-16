@@ -10,12 +10,12 @@ $sudo usermod -aG docker <your-user>
 
 Apache HTTP server
 ------------------------
-docker container run -dit --name c1 -p 80:80 krishnamaram2/http:1
+docker container run -dit --name h1 -p 80:80 krishnamaram2/http:1
 
 
 Apache Tomcat server
 -------------------------
-
+docker container run -dit --name t1 -p 8080:8080 krishnamaram2/tomcat:1
 
 MySQL DB server
 ---------------------
