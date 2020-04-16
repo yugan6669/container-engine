@@ -19,3 +19,4 @@ docker container run -dit --name t1 -p 8080:8080 krishnamaram2/tomcat:1
 
 MySQL DB server
 ---------------------
+docker container run -dit --name m1 -p 3306:3306 krishnamaram2/mysql:1
