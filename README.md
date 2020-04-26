@@ -42,8 +42,32 @@ $docker container run -d --name <container_name> -p 80:80 <image_name>
 
 Apache Tomcat server
 -------------------------
+$git clone https://github.com/krishnamaram2/Container_Engine.git
 
-docker container run -dit --name t1 -p 8080:8080 krishnamaram2/tomcat:1
+$cd Container_Engine/src/appserver
+
+$docker image build -t <image_name> .
+
+$docker container run -d --name <container_name> -p 8080:8080 <image_name>
+
+$docker exec -it <container_name> bash
+
+vi /usr/local/tomcat/webapps/conf/server.xml
+
+<!--        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+
+               prefix="localhost_access_log" suffix=".txt"
+               
+               pattern="%h %l %u %t &quot;%r&quot; %s %b" /> -->
+
+
+$git clone https://github.com/krishnamaram2/WebApp.git
+
+$docker cp WebApp/binary/Student.war <container_name>:/usr/local/tomcat/webapps/
+
+$sh /usr/local/tomcat/bin/catalina.sh start
+
+
 
 
 MySQL DB server
