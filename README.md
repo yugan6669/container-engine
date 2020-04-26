@@ -7,6 +7,9 @@ Installation and set up
 =============================
 
 Step 1:
+$yum update -y && yum upgrade -y
+
+$yum install git -y && yum install wget -y && yum install unzip -y && yum install curl -y
 
 Option 1:
 $ curl -fsSL https://get.docker.com -o get-docker.sh
