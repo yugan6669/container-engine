@@ -1,16 +1,17 @@
 Project Title
 ==========================
 
-Docker is used to containerized application
+This project implemented to touch and feel of light weight containers
 
-Installation and set up
-=============================
+Installation and Configuration set up
+======================================
 
 Step 1:
 $yum update -y && yum upgrade -y
 
 $yum install git -y && yum install wget -y && yum install unzip -y && yum install curl -y
 
+Step2:
 Option 1:
 $ curl -fsSL https://get.docker.com -o get-docker.sh
 
@@ -20,8 +21,7 @@ Option 2:
 
 $sudo yum install docker -y
 
-Step 2:
-
+Step 3:
 $sudo usermod -aG docker <your-user>
 
 
@@ -66,8 +66,6 @@ $git clone https://github.com/krishnamaram2/WebApp.git
 $docker cp WebApp/binary/Student.war <container_name>:/usr/local/tomcat/webapps/
 
 $sh /usr/local/tomcat/bin/catalina.sh start
-
-
 
 
 MySQL DB server
