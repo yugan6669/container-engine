@@ -22,7 +22,7 @@ Option 2:
 $sudo yum install docker -y
 
 Step 3:
-$sudo usermod -aG docker <your-user>
+$sudo usermod -aG docker <<your-user>>
 
 
 EXecution Flow
